@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nuevo Mensaje</title>
+</head>
+<body>
+  <h1>Enviar Mensaje</h1>
+
+  <form action="/nuevo-mensaje" method="POST">
+    <div>
+      <label>Nombre:</label>
+      <input type="text" name="usuario" required />
+    </div>
+
+    <div>
+      <label>Mensaje:</label>
+      <textarea name="mensaje" rows="4" required></textarea>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
