@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <title>Nuevo Mensaje</title>
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <h1>Enviar Mensaje</h1>
+  <div class="container">
+    <h1>Enviar Mensaje</h1>
 
-  <form action="/nuevo-mensaje" method="POST">
-    <div>
-      <label>Nombre:</label>
-      <input type="text" name="usuario" required />
-    </div>
+    <form action="/nuevo-mensaje" method="POST">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" name="usuario" required />
+      </div>
 
-    <div>
-      <label>Mensaje:</label>
-      <textarea name="mensaje" rows="4" required></textarea>
-    </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea name="mensaje" rows="4" required></textarea>
+      </div>
 
-    <button type="submit">Enviar</button>
-  </form>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
 </body>
 </html>
